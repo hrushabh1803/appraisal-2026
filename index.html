@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha Gaikwad - Interactive Annual Appraisal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav-hint">CLICK ANYWHERE or USE ARROW KEYS TO SLIDE AND RUN ANIMATIONS</div>
+
+    <div class="presentation-wrapper">
+        <div class="presentation-controls">
+            <button id="prevBtn" class="control-btn"><i class="fa-solid fa-chevron-left"></i> Prev</button>
+            <button id="nextBtn" class="control-btn">Next <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <div class="slide-container active" id="slide1">
+            <div class="title-layout" style="width: 100%;">
+                <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; gap: 40px;"
+                    class="hero-split">
+                    <div style="flex: 1;">
+                        <img src="./assets/img/logo.png" alt="VM Logo"
+                            style="height: 60px; margin-bottom: 30px; filter: brightness(0) invert(1);">
+                        <br>
+                        <div class="badge">Performance Presentation</div>
+                        <h1 style="margin-bottom: 10px;">Sneha Gaikwad</h1>
+                        <p class="subtitle" style="margin-top: 0;">D2C Growth Expert</p>
+                    </div>
+                    <div
+                        style="flex: 1; display: flex; justify-content: center; align-items: center; animation: float 6s ease-in-out infinite;">
+                        <img src="./assets/img/idea.png" alt="Idea Icon"
+                            style="width: 100%; height: auto; max-width: 300px; filter: drop-shadow(0 0 20px rgba(0, 209, 255, 0.3));">
+                    </div>
+                </div>
+
+                <div
+                    style="margin-top: 60px; font-weight: 500; border-top: 1px solid var(--border-color); padding-top: 20px; width: 100%; color: var(--text-secondary); text-align: left;">
+                    ANNUAL APPRAISAL | FY 2025–2026
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container" id="slide2">
+            <h2 class="slide-title">The Growth Journey</h2>
+            <div class="content-area">
+                <div class="timeline-layout">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item step visible default-visible">
+                        <div class="timeline-dot"></div>
+                        <h3>May 2025</h3>
+                        <p>Joined as Fresher<br>Zero Prior Exp</p>
+                    </div>
+                    <div class="timeline-item step">
+                        <div class="timeline-dot"></div>
+                        <h3>Q2 & Q4</h3>
+                        <p>Rapid Skill Ramp<br>GA4 & Tracking</p>
+                    </div>
+                    <div class="timeline-item step">
+                        <div class="timeline-dot"></div>
+                        <h3>Performance</h3>
+                        <p>Account Ownership<br>High-Spend Portfolio</p>
+                    </div>
+                    <div class="timeline-item step">
+                        <div class="timeline-dot"></div>
+                        <h3>May 2026</h3>
+                        <p>Google Ads Pro<br>Award Nominated</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container" id="slide3">
+            <h2 class="slide-title">Portfolio Impact & Setup</h2>
+            <div class="content-area">
+                <div class="table-layout">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Brand Portfolio</th>
+                                <th>Operational Focus Matrix</th>
+                                <th>Performance Impact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="step visible default-visible">
+                                <td><strong>Cureveda & Soulflower</strong></td>
+                                <td>High spending clients. PMax, Search, Shopping, Demand Gen setups</td>
+                                <td>Budget control & offer-aligned strategy</td>
+                            </tr>
+                            <tr class="step">
+                                <td><strong>Zoycare</strong></td>
+                                <td>Location report analysis & creative validation</td>
+                                <td>Full independent account management</td>
+                            </tr>
+                            <tr class="step">
+                                <td><strong>MaySkin & Nova IVF</strong></td>
+                                <td>Campaign structure, lead gen & CRO-focused tracking</td>
+                                <td>New brand scalable foundation setup</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container" id="slide4">
+            <h2 class="slide-title">Case Study: Natch</h2>
+            <div class="content-area">
+                <div class="natch-slide-grid">
+                    <div class="natch-stats">
+                        <div class="stat-box step visible default-visible">
+                            <h4>ROAS Growth</h4>
+                            <p>Improved Natch performance by scaling ROAS from <strong>1x to 2x</strong>.</p>
+                        </div>
+                        <div class="stat-box step">
+                            <h4>Strategic Optimizations</h4>
+                            <p>Search term analysis, keyword intent mapping, and creative insights within Performance
+                                Max.</p>
+                        </div>
+                        <div class="stat-box step">
+                            <h4>Holistic Approach</h4>
+                            <p>Conducted competitor analysis and shared landing page improvements based on Google Ads
+                                data.</p>
+                        </div>
+                    </div>
+                    <div class="image-container step">
+                        <img src="./assets/img/natch_performance.png" alt="Natch Performance Metrics">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container" id="slide5">
+            <h2 class="slide-title">Technical Competencies</h2>
+            <div class="content-area">
+                <div class="tiled-content">
+                    <div class="tile step visible default-visible">
+                        <div class="icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Integrations & GA4</h3>
+                        <ul class="bullet-list">
+                            <li>GoKwik & Shiprocket setups</li>
+                            <li>GA4 Integration & Tracking</li>
+                            <li>Troubleshooting & Validation</li>
+                        </ul>
+                    </div>
+                    <div class="tile step">
+                        <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>Campaign Deep Analysis</h3>
+                        <ul class="bullet-list">
+                            <li>Search Term Analysis</li>
+                            <li>Keyword Intent Mapping</li>
+                            <li>Audience & Creative evaluation</li>
+                        </ul>
+                    </div>
+                    <div class="tile step">
+                        <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h3>Strategy</h3>
+                        <ul class="bullet-list">
+                            <li>Competitor Analysis</li>
+                            <li>Landing Page CRO updates</li>
+                            <li>Budget & A/B Test Frameworks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container" id="slide6">
+            <h2 class="slide-title">Skill Expertise</h2>
+            <div class="content-area">
+                <div class="tiled-content">
+                    <div class="tile step visible default-visible">
+                        <div class="icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Core Technical Skills</h3>
+                        <ul class="bullet-list">
+                            <li>GA4, Analytics & GTM Setup</li>
+                            <li>Google Looker Studio & GMC</li>
+                            <li>Conversion Tracking & 3rd Party Checkouts (Shopify, Faster)</li>
+                        </ul>
+                    </div>
+                    <div class="tile step">
+                        <div class="icon"><i class="fa-solid fa-robot"></i></div>
+                        <h3>AI & Automations</h3>
+                        <ul class="bullet-list">
+                            <li>N8N Automation (AI)</li>
+                            <li>Pursuing AI in Digital Marketing (Ad Pro Academy)</li>
+                            <li><a href="https://docs.google.com/spreadsheets/d/1pVLOh2KxVV6HQA47kGyJjF38suQvmJ6Q7NnRp2bPCWc/edit?gid=0#gid=0"
+                                    target="_blank" class="tracker-link">View Automation Tracker</a></li>
+                        </ul>
+                    </div>
+                    <div class="tile step">
+                        <div class="icon"><i class="fa-solid fa-users"></i></div>
+                        <h3>Management & Adaptability</h3>
+                        <ul class="bullet-list">
+                            <li>Client Management & Handling</li>
+                            <li>Quick Learner: Mastered Lead Gen for Nova IVF with no prior experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container" id="slide7">
+            <h2 class="slide-title">High Spend Management</h2>
+            <div class="content-area">
+                <div class="table-layout" style="margin-bottom: 30px;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Client Name</th>
+                                <th>Spends Managed</th>
+                                <th>Approved Budgets</th>
+                                <th>% of Spends</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="step visible default-visible">
+                                <td><strong>Cureveda - CA</strong></td>
+                                <td>~ ₹20L</td>
+                                <td>₹30L</td>
+                                <td>~ 66%</td>
+                            </tr>
+                            <tr class="step">
+                                <td><strong>Soulflower</strong></td>
+                                <td>~ ₹8L</td>
+                                <td>₹8.75L</td>
+                                <td>~ 91%</td>
+                            </tr>
+                            <tr class="step">
+                                <td><strong>Natch</strong></td>
+                                <td>~ ₹45K</td>
+                                <td>₹70K</td>
+                                <td>~ 64%</td>
+                            </tr>
+                            <tr class="step">
+                                <td style="color: var(--highlight-color); font-weight: bold;">TOTAL</td>
+                                <td style="color: var(--highlight-color); font-weight: bold;">~ ₹28.5L</td>
+                                <td style="color: var(--highlight-color); font-weight: bold;">₹39.4L</td>
+                                <td style="color: var(--highlight-color); font-weight: bold;">~ 72%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="highlight-numbers-layout step">
+                    <div class="number-card"
+                        style="grid-column: span 4; border-color: var(--accent-color); padding: 20px;">
+                        <div class="label" style="font-size: 18px; margin-top: 10px;">Successfully managed and optimized
+                            high-budget portfolios.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container" id="slide8">
+            <h2 class="slide-title">Audits & New Business</h2>
+            <div class="content-area">
+                <div class="highlight-numbers-layout">
+                    <div class="number-card" style="grid-column: span 2;">
+                        <div class="number"><span class="counter" data-target="12">0</span>+</div>
+                        <div class="label">Exhaustive Audits Conducted</div>
+                        <p style="font-size: 16px; color: var(--text-secondary); margin-top: 10px; text-align: center;">
+                            Audited pipeline prospects including Bonvie Snacks, <br>Root & Soil, Tash Hair, and Tru
+                            Nativ.</p>
+                    </div>
+                    <div class="number-card"
+                        style="grid-column: span 2; border-color: var(--highlight-color); background: rgba(0, 209, 255, 0.05);">
+                        <div class="number" style="color: var(--highlight-color);"><span class="counter"
+                                data-target="3">0</span></div>
+                        <div class="label">New Clients Won via Audits</div>
+                        <p style="font-size: 16px; color: var(--text-secondary); margin-top: 10px; text-align: center;">
+                            Direct hands-on audit conversion contributions for <br><strong>Organic Tattva, HYUE, and
+                                Yuri Skin Science</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container" id="slide9">
+            <div class="title-layout"
+                style="align-items: center; justify-content: center; width: 100%; text-align: center;">
+                <h1
+                    style="text-align: center; font-size: 80px; color: var(--highlight-color); border: none; padding: 0;">
+                    Thank You</h1>
+                <p style="text-align: center; font-size: 24px; margin-top: 20px;">For your time and guidance!</p>
+                <a href="https://www.linkedin.com/in/sneha-gaikwad801/" target="_blank" style="text-decoration: none;">
+                    <div class="badge"
+                        style="margin-top: 40px; font-size: 18px; padding: 10px 30px; cursor: pointer; transition: transform 0.3s; box-shadow: 0 5px 15px rgba(230, 57, 70, 0.4);"
+                        onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        <i class="fa-brands fa-linkedin" style="margin-right: 8px;"></i> Sneha Gaikwad
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Images -->
+    <div class="image-modal" id="imageModal">
+        <span class="close-modal">&times;</span>
+        <img class="image-modal-content" id="modalImage">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
