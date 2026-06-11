@@ -17,6 +17,11 @@ function showSlide(index) {
     resetAutoAdvance();
     slides.forEach(s => s.classList.remove('active'));
     slides[index].classList.add('active');
+    
+    // Scroll to top of the page on mobile
+    if (window.innerWidth <= 768) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 
     // Run counters for this slide
     const counters = slides[index].querySelectorAll('.counter');
@@ -46,6 +51,9 @@ function handleNext() {
     if (invisibleSteps.length > 0) {
         // Trigger drop downs / step values inside the slide one by one
         invisibleSteps[0].classList.add('visible');
+        if (window.innerWidth <= 768) {
+            invisibleSteps[0].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
     } else {
         // No steps left, move seamlessly to next slide layout
         if (currentSlideIndex < slides.length - 1) {
@@ -63,6 +71,9 @@ function handlePrev() {
 
     if (visibleSteps.length > skippable.length) {
         visibleSteps[visibleSteps.length - 1].classList.remove('visible');
+        if (window.innerWidth <= 768 && visibleSteps.length > 1) {
+            visibleSteps[visibleSteps.length - 2].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
     } else {
         // Slide backwards safely
         if (currentSlideIndex > 0) {

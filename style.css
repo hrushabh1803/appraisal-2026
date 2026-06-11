@@ -62,6 +62,8 @@ width: 40px;
     flex-direction: column;
     padding: 60px; /* Generous padding for alignment */
     z-index: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .slide-container.active {
@@ -220,6 +222,21 @@ p { font-size: 18px; line-height: 1.6; color: var(--text-secondary); text-align:
 .stat-box p { font-size: 16px; color: var(--text-primary); }
 
 /* RESPONSIVE MEDIA QUERIES */
+
+/* For Low-Resolution Laptops (short screens like 1366x768) */
+@media (max-height: 800px) and (min-width: 1025px) {
+    .slide-container { padding: 40px; }
+    .slide-title { margin-bottom: 20px; font-size: 36px; }
+    h1 { font-size: 48px; }
+    .title-layout .subtitle { margin-top: 10px; font-size: 20px; }
+    .number-card { padding: 20px 10px; }
+    .number-card .number { font-size: 60px; }
+    .timeline-layout { margin-top: 30px; }
+    .tiled-content { gap: 20px; }
+    .tile { padding: 20px; }
+    .content-area, .title-layout { justify-content: flex-start; }
+}
+
 @media (max-width: 1024px) {
     .presentation-wrapper {
         max-width: 100%;
@@ -260,8 +277,8 @@ p { font-size: 18px; line-height: 1.6; color: var(--text-secondary); text-align:
     .table-layout table { min-width: 600px; }
     th, td { padding: 12px; font-size: 14px; }
     
-    .presentation-controls { bottom: 15px; right: 15px; width: calc(100% - 30px); justify-content: space-between; }
-    .control-btn { padding: 10px 15px; font-size: 14px; flex: 1; justify-content: center; }
+    .presentation-controls { position: fixed; bottom: 15px; right: 15px; left: 15px; width: calc(100% - 30px); justify-content: space-between; z-index: 100; display: flex; }
+    .control-btn { padding: 10px 15px; font-size: 14px; flex: 1; justify-content: center; background: rgba(0, 0, 0, 0.8); }
     .nav-hint { display: none; }
     .number-card .number { font-size: 50px; }
     
